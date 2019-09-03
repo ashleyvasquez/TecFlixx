@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/TecFlix.dir/main.cpp.o CMakeFiles/TecFlix.dir/Application.cpp.o  -o TecFlix /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.2 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.2 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.2 
