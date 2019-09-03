@@ -6,28 +6,28 @@
 
 #IncludeRegexTransform: 
 
-/home/ashley/CLionProjects/TecFlix/Application.cpp
-QBrush
--
-QImage
--
-QtWidgets/QApplication
--
-QtWidgets/QGridLayout
--
-QtWidgets/QGraphicsScene
--
-Application.h
-/home/ashley/CLionProjects/TecFlix/Application.h
-
 /home/ashley/CLionProjects/TecFlix/Application.h
 QGraphicsScene
 -
 QGraphicsView
 -
+iostream
+-
+fstream
+-
 QObject
 -
 QWidget
+-
+
+/home/ashley/CLionProjects/TecFlix/main.cpp
+iostream
+-
+Application.h
+/home/ashley/CLionProjects/TecFlix/Application.h
+QtWidgets/QApplication
+-
+QtWidgets/QGridLayout
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
@@ -737,14 +737,6 @@ QtCore/qpoint.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
 QtCore/qglobal.h
 -
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/QBrush
-qbrush.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/QImage
-qimage.h
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 QtGui/qtguiglobal.h

@@ -78,8 +78,6 @@ CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCo
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
-CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QBrush
-CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h

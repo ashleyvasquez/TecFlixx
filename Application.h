@@ -6,7 +6,8 @@
 #define TECFLIX_APPLICATION_H
 #include <QGraphicsScene>
 #include <QGraphicsView>
-
+#include <iostream>
+#include <fstream>
 #include <QObject>
 #include <QWidget>
 
@@ -15,6 +16,11 @@ public:
     void Window();
     QGraphicsView *view;
     QGraphicsScene *scene;
+    void Read();
+
+
+
+
 
 };
 
