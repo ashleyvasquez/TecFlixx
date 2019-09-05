@@ -7,6 +7,8 @@
 #include <iostream>
 #include <fstream>
 #include "Application.h"
+#include "List.h"
+#include "List.cpp"
 
 using namespace std;
 
@@ -26,28 +28,35 @@ void Application::Read() {
 
     if(!ip.is_open()) std::cout << "ERROR: File Open" << "\n";
 
-    string nombre;
-    string apellido;
-    string edad;
-    string peso;
+    List<string> list;
+    List<string> list_next;
 
-    while(ip.good()){
+    int ele;
+    int dim;
+    int pos;
 
-        getline(ip, nombre,',');
-        getline(ip,apellido,',');
-        getline(ip,edad,',');
-        getline(ip, peso,'\n');
+    string line;
 
-        std::cout << "Name: "<<nombre<< " "<<apellido<< '\n';
-        std::cout << "Age: "<<edad << '\n';
-        std::cout << "Weight: "<<peso<< '\n';
-        std::cout << "-------------------" << '\n';
+
+    if(ip.good()) {
+
+        for (int i = 0;i < 18; i++) {
+            while (i < 9) {
+                getline(ip, line, '\n');
+                list.add_end(line);
+                i++;
+            }
+            getline(ip, line, '\n');
+            list_next.add_end(line);
+
+
+        }
+        list.print();
+        list_next.print();
+
 
 
     }
     ip.close();
-
-
-
 
 }

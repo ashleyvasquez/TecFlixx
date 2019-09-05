@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/ashley/CLionProjects/TecFlix/Application.cpp
+QtWidgets/QApplication
+-
+QtWidgets/QGridLayout
+-
+QtWidgets/QGraphicsScene
+-
+iostream
+-
+fstream
+-
+Application.h
+/home/ashley/CLionProjects/TecFlix/Application.h
+List.h
+/home/ashley/CLionProjects/TecFlix/List.h
+List.cpp
+/home/ashley/CLionProjects/TecFlix/List.cpp
+
 /home/ashley/CLionProjects/TecFlix/Application.h
 QGraphicsScene
 -
@@ -20,14 +38,30 @@ QObject
 QWidget
 -
 
-/home/ashley/CLionProjects/TecFlix/main.cpp
+/home/ashley/CLionProjects/TecFlix/List.cpp
+List.h
+/home/ashley/CLionProjects/TecFlix/List.h
+
+/home/ashley/CLionProjects/TecFlix/List.h
+fstream
+-
 iostream
 -
-Application.h
-/home/ashley/CLionProjects/TecFlix/Application.h
-QtWidgets/QApplication
+string
 -
-QtWidgets/QGridLayout
+stdlib.h
+-
+Node.h
+/home/ashley/CLionProjects/TecFlix/Node.h
+Node.cpp
+/home/ashley/CLionProjects/TecFlix/Node.cpp
+
+/home/ashley/CLionProjects/TecFlix/Node.cpp
+Node.h
+/home/ashley/CLionProjects/TecFlix/Node.h
+
+/home/ashley/CLionProjects/TecFlix/Node.h
+iostream
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject

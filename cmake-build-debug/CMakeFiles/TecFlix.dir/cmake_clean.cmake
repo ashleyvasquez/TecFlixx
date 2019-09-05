@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TecFlix.dir/main.cpp.o"
   "CMakeFiles/TecFlix.dir/Application.cpp.o"
+  "CMakeFiles/TecFlix.dir/Node.cpp.o"
+  "CMakeFiles/TecFlix.dir/List.cpp.o"
   "TecFlix.pdb"
   "TecFlix"
 )

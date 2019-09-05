@@ -2,6 +2,9 @@
 #include "Application.h"
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
+#include "List.h"
+#include "List.cpp"
+
 
 
 using namespace std;
