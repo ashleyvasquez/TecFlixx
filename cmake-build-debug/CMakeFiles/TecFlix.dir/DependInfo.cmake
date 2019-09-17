@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ashley/CLionProjects/TecFlix/Application.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Application.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/List.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/List.cpp.o"
+  "/home/ashley/CLionProjects/TecFlix/Movie.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Movie.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/Node.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Node.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/main.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/main.cpp.o"
   )

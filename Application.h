@@ -16,12 +16,7 @@ public:
     void Window();
     QGraphicsView *view;
     QGraphicsScene *scene;
-    void Read();
-
-
-
-
-
+    void Read(int n);
 };
 
 

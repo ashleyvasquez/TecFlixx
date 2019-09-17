@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/82/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/83/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/82/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/83/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/ashley/CLionProjects/TecFlix/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/82/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/83/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/82/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/83/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -177,6 +177,33 @@ List.cpp.s:
 	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/List.cpp.s
 .PHONY : List.cpp.s
 
+Movie.o: Movie.cpp.o
+
+.PHONY : Movie.o
+
+# target to build an object file
+Movie.cpp.o:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Movie.cpp.o
+.PHONY : Movie.cpp.o
+
+Movie.i: Movie.cpp.i
+
+.PHONY : Movie.i
+
+# target to preprocess a source file
+Movie.cpp.i:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Movie.cpp.i
+.PHONY : Movie.cpp.i
+
+Movie.s: Movie.cpp.s
+
+.PHONY : Movie.s
+
+# target to generate assembly for a file
+Movie.cpp.s:
+	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Movie.cpp.s
+.PHONY : Movie.cpp.s
+
 Node.o: Node.cpp.o
 
 .PHONY : Node.o
@@ -246,6 +273,9 @@ help:
 	@echo "... List.o"
 	@echo "... List.i"
 	@echo "... List.s"
+	@echo "... Movie.o"
+	@echo "... Movie.i"
+	@echo "... Movie.s"
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"

@@ -6,6 +6,7 @@ CMakeFiles/TecFlix.dir/Application.cpp.o
  /home/ashley/CLionProjects/TecFlix/Application.h
  /home/ashley/CLionProjects/TecFlix/List.cpp
  /home/ashley/CLionProjects/TecFlix/List.h
+ /home/ashley/CLionProjects/TecFlix/Movie.h
  /home/ashley/CLionProjects/TecFlix/Node.cpp
  /home/ashley/CLionProjects/TecFlix/Node.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
@@ -139,6 +140,9 @@ CMakeFiles/TecFlix.dir/List.cpp.o
  /home/ashley/CLionProjects/TecFlix/List.h
  /home/ashley/CLionProjects/TecFlix/Node.cpp
  /home/ashley/CLionProjects/TecFlix/Node.h
+CMakeFiles/TecFlix.dir/Movie.cpp.o
+ /home/ashley/CLionProjects/TecFlix/Movie.cpp
+ /home/ashley/CLionProjects/TecFlix/Movie.h
 CMakeFiles/TecFlix.dir/Node.cpp.o
  /home/ashley/CLionProjects/TecFlix/Node.cpp
  /home/ashley/CLionProjects/TecFlix/Node.h

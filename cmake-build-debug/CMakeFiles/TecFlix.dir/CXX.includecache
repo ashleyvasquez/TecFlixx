@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/ashley/CLionProjects/TecFlix/Application.cpp
-QtWidgets/QApplication
--
-QtWidgets/QGridLayout
--
-QtWidgets/QGraphicsScene
--
-iostream
--
-fstream
--
-Application.h
-/home/ashley/CLionProjects/TecFlix/Application.h
-List.h
-/home/ashley/CLionProjects/TecFlix/List.h
-List.cpp
-/home/ashley/CLionProjects/TecFlix/List.cpp
-
 /home/ashley/CLionProjects/TecFlix/Application.h
 QGraphicsScene
 -
@@ -63,6 +45,18 @@ Node.h
 /home/ashley/CLionProjects/TecFlix/Node.h
 iostream
 -
+
+/home/ashley/CLionProjects/TecFlix/main.cpp
+iostream
+-
+Application.h
+/home/ashley/CLionProjects/TecFlix/Application.h
+QtWidgets/QApplication
+-
+QtWidgets/QGridLayout
+-
+List.cpp
+/home/ashley/CLionProjects/TecFlix/List.cpp
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 qobject.h

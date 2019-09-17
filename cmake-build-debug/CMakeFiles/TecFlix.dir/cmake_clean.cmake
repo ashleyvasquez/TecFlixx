@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TecFlix.dir/Application.cpp.o"
   "CMakeFiles/TecFlix.dir/Node.cpp.o"
   "CMakeFiles/TecFlix.dir/List.cpp.o"
+  "CMakeFiles/TecFlix.dir/Movie.cpp.o"
   "TecFlix.pdb"
   "TecFlix"
 )
