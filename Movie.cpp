@@ -39,7 +39,7 @@ void Movie::set_country(string a){
 
 }
 void Movie::set_movie_imdb_link(string a){
-    movie_imdb_link;
+    movie_imdb_link = a;
 }
 
 string Movie::get_movie_title() {

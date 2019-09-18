@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/ashley/CLionProjects/TecFlix/Application.cpp
+iostream
+-
+curl/curl.h
+-
+cstdio
+-
+cstring
+-
+Application.h
+/home/ashley/CLionProjects/TecFlix/Application.h
+List.h
+/home/ashley/CLionProjects/TecFlix/List.h
+List.cpp
+/home/ashley/CLionProjects/TecFlix/List.cpp
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
+
 /home/ashley/CLionProjects/TecFlix/Application.h
 QGraphicsScene
 -
@@ -18,6 +36,10 @@ fstream
 QObject
 -
 QWidget
+-
+string
+/home/ashley/CLionProjects/TecFlix/string
+iostream
 -
 
 /home/ashley/CLionProjects/TecFlix/List.cpp
@@ -38,11 +60,33 @@ Node.h
 Node.cpp
 /home/ashley/CLionProjects/TecFlix/Node.cpp
 
+/home/ashley/CLionProjects/TecFlix/Movie.h
+string
+/home/ashley/CLionProjects/TecFlix/string
+
 /home/ashley/CLionProjects/TecFlix/Node.cpp
 Node.h
 /home/ashley/CLionProjects/TecFlix/Node.h
 
 /home/ashley/CLionProjects/TecFlix/Node.h
+iostream
+-
+
+/home/ashley/CLionProjects/TecFlix/Window.h
+QGraphicsScene
+-
+QGraphicsView
+-
+iostream
+-
+fstream
+-
+QObject
+-
+QWidget
+-
+string
+/home/ashley/CLionProjects/TecFlix/string
 iostream
 -
 
@@ -57,6 +101,8 @@ QtWidgets/QGridLayout
 -
 List.cpp
 /home/ashley/CLionProjects/TecFlix/List.cpp
+Window.h
+/home/ashley/CLionProjects/TecFlix/Window.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 qobject.h

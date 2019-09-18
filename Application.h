@@ -10,13 +10,17 @@
 #include <fstream>
 #include <QObject>
 #include <QWidget>
+#include "string"
+#include <iostream>
+
+using namespace std;
 
 class Application{
 public:
-    void Window();
-    QGraphicsView *view;
-    QGraphicsScene *scene;
     void Read(int n);
+    void gethtml(string url_imdb);
+    string getimage_url(string html);
+    void download_image(string url_image);
 };
 
 

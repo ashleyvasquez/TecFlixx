@@ -3,17 +3,20 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include "List.cpp"
-
-
+#include "Window.h"
 
 using namespace std;
 
+
 int main(int argc, char *argv[]) {
 
-    QApplication app(argc, argv);
+
     Application *a = new Application();
     a->Read(2);
-    a -> Window();
+    //a->gethtml();
+    QApplication app(argc, argv);
+    Window *w = new Window();
+    w -> CrearVentana();
     return app.exec();
 
 
