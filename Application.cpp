@@ -187,7 +187,7 @@ void Application::Read(int n) {
                     i->set_country(country);
                     i->set_movie_imdb_link(movie_imdb_link);
                     list.add_end(*i);
-                    gethtml(i->get_movie_imdb_link());
+                    //gethtml(i->get_movie_imdb_link());
 
                 } else {
 
@@ -195,6 +195,9 @@ void Application::Read(int n) {
                 }
 
             }
+            
+
+
         }
         ip.close();
     }

@@ -13,13 +13,10 @@
 #include "string"
 #include <iostream>
 
-
-class Window {
+class Window : public QWidget
+{
 public:
-    void CrearVentana();
-    QGraphicsView *view;
-    QGraphicsScene *scene;
-
+    Window(QWidget *parent = 0);
 };
 
 

@@ -75,13 +75,13 @@ template<typename T>
 int List<T>::obt_pos(int pos)
 {
     Node<T> *aux;
-    int i=1;
-    aux=m_head;
+    int i = 1;
+    aux = m_head;
     while(i!=pos){
-        aux=aux->next;
+        aux = aux->next;
         i++;
     }
-    cout<<"El puntero en esa posición de la lista es "<<aux->data<<endl;
+    cout << "El puntero en esa posición de la lista es " << aux->print() << endl;
     return aux->data;
 
 }

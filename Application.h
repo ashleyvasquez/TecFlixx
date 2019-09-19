@@ -21,6 +21,7 @@ public:
     void gethtml(string url_imdb);
     string getimage_url(string html);
     void download_image(string url_image);
+
 };
 
 
