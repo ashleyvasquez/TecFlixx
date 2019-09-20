@@ -4,11 +4,10 @@
 CMakeFiles/TecFlix.dir/Application.cpp.o
  /home/ashley/CLionProjects/TecFlix/Application.cpp
  /home/ashley/CLionProjects/TecFlix/Application.h
- /home/ashley/CLionProjects/TecFlix/List.cpp
  /home/ashley/CLionProjects/TecFlix/List.h
  /home/ashley/CLionProjects/TecFlix/Movie.h
- /home/ashley/CLionProjects/TecFlix/Node.cpp
  /home/ashley/CLionProjects/TecFlix/Node.h
+ /home/ashley/CLionProjects/TecFlix/Paginacion.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -126,14 +125,21 @@ CMakeFiles/TecFlix.dir/Application.cpp.o
 CMakeFiles/TecFlix.dir/List.cpp.o
  /home/ashley/CLionProjects/TecFlix/List.cpp
  /home/ashley/CLionProjects/TecFlix/List.h
- /home/ashley/CLionProjects/TecFlix/Node.cpp
+ /home/ashley/CLionProjects/TecFlix/Movie.h
  /home/ashley/CLionProjects/TecFlix/Node.h
 CMakeFiles/TecFlix.dir/Movie.cpp.o
  /home/ashley/CLionProjects/TecFlix/Movie.cpp
  /home/ashley/CLionProjects/TecFlix/Movie.h
 CMakeFiles/TecFlix.dir/Node.cpp.o
+ /home/ashley/CLionProjects/TecFlix/Movie.h
  /home/ashley/CLionProjects/TecFlix/Node.cpp
  /home/ashley/CLionProjects/TecFlix/Node.h
+CMakeFiles/TecFlix.dir/Paginacion.cpp.o
+ /home/ashley/CLionProjects/TecFlix/List.h
+ /home/ashley/CLionProjects/TecFlix/Movie.h
+ /home/ashley/CLionProjects/TecFlix/Node.h
+ /home/ashley/CLionProjects/TecFlix/Paginacion.cpp
+ /home/ashley/CLionProjects/TecFlix/Paginacion.h
 CMakeFiles/TecFlix.dir/Window.cpp.o
  /home/ashley/CLionProjects/TecFlix/Window.cpp
  /home/ashley/CLionProjects/TecFlix/Window.h
@@ -267,10 +273,10 @@ CMakeFiles/TecFlix.dir/Window.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 CMakeFiles/TecFlix.dir/main.cpp.o
  /home/ashley/CLionProjects/TecFlix/Application.h
- /home/ashley/CLionProjects/TecFlix/List.cpp
  /home/ashley/CLionProjects/TecFlix/List.h
- /home/ashley/CLionProjects/TecFlix/Node.cpp
+ /home/ashley/CLionProjects/TecFlix/Movie.h
  /home/ashley/CLionProjects/TecFlix/Node.h
+ /home/ashley/CLionProjects/TecFlix/Paginacion.h
  /home/ashley/CLionProjects/TecFlix/Window.h
  /home/ashley/CLionProjects/TecFlix/main.cpp
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject

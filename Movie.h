@@ -5,6 +5,7 @@
 #ifndef TECFLIX_MOVIE_H
 #define TECFLIX_MOVIE_H
 #include "string"
+#include <iostream>
 
 using namespace std;
 
@@ -29,6 +30,9 @@ public:
     void set_language(string a);
     void set_country(string a);
     void set_movie_imdb_link(string a);
+    void Print(Movie movie);
+
+    Movie();
 
 
     string get_movie_title();

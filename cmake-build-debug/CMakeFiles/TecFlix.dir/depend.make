@@ -3,11 +3,10 @@
 
 CMakeFiles/TecFlix.dir/Application.cpp.o: ../Application.cpp
 CMakeFiles/TecFlix.dir/Application.cpp.o: ../Application.h
-CMakeFiles/TecFlix.dir/Application.cpp.o: ../List.cpp
 CMakeFiles/TecFlix.dir/Application.cpp.o: ../List.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: ../Movie.h
-CMakeFiles/TecFlix.dir/Application.cpp.o: ../Node.cpp
 CMakeFiles/TecFlix.dir/Application.cpp.o: ../Node.h
+CMakeFiles/TecFlix.dir/Application.cpp.o: ../Paginacion.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -125,14 +124,21 @@ CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWi
 
 CMakeFiles/TecFlix.dir/List.cpp.o: ../List.cpp
 CMakeFiles/TecFlix.dir/List.cpp.o: ../List.h
-CMakeFiles/TecFlix.dir/List.cpp.o: ../Node.cpp
+CMakeFiles/TecFlix.dir/List.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/List.cpp.o: ../Node.h
 
 CMakeFiles/TecFlix.dir/Movie.cpp.o: ../Movie.cpp
 CMakeFiles/TecFlix.dir/Movie.cpp.o: ../Movie.h
 
+CMakeFiles/TecFlix.dir/Node.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/Node.cpp.o: ../Node.cpp
 CMakeFiles/TecFlix.dir/Node.cpp.o: ../Node.h
+
+CMakeFiles/TecFlix.dir/Paginacion.cpp.o: ../List.h
+CMakeFiles/TecFlix.dir/Paginacion.cpp.o: ../Movie.h
+CMakeFiles/TecFlix.dir/Paginacion.cpp.o: ../Node.h
+CMakeFiles/TecFlix.dir/Paginacion.cpp.o: ../Paginacion.cpp
+CMakeFiles/TecFlix.dir/Paginacion.cpp.o: ../Paginacion.h
 
 CMakeFiles/TecFlix.dir/Window.cpp.o: ../Window.cpp
 CMakeFiles/TecFlix.dir/Window.cpp.o: ../Window.h
@@ -266,10 +272,10 @@ CMakeFiles/TecFlix.dir/Window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets
 CMakeFiles/TecFlix.dir/Window.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 
 CMakeFiles/TecFlix.dir/main.cpp.o: ../Application.h
-CMakeFiles/TecFlix.dir/main.cpp.o: ../List.cpp
 CMakeFiles/TecFlix.dir/main.cpp.o: ../List.h
-CMakeFiles/TecFlix.dir/main.cpp.o: ../Node.cpp
+CMakeFiles/TecFlix.dir/main.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../Node.h
+CMakeFiles/TecFlix.dir/main.cpp.o: ../Paginacion.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../Window.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../main.cpp
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject

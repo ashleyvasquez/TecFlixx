@@ -5,23 +5,22 @@
 #ifndef TECFLIX_NODE_H
 #define TECFLIX_NODE_H
 #include <iostream>
+#include "Movie.h"
 
 using namespace std;
-
-template <class T>
 
 class Node
 {
 public:
     Node();
-    Node(T);
+    Node(Movie m);
     ~Node();
 
     Node *next;
-    T data;
+    Movie data;
 
     void delete_all();
-    void print();
+    void print(Movie m);
 };
 
 #endif //TECFLIX_NODE_H

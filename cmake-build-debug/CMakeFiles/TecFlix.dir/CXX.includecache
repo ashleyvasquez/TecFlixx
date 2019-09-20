@@ -7,22 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/ashley/CLionProjects/TecFlix/Application.cpp
-iostream
--
-curl/curl.h
--
-cstdio
--
-cstring
--
 Application.h
 /home/ashley/CLionProjects/TecFlix/Application.h
-List.h
-/home/ashley/CLionProjects/TecFlix/List.h
-List.cpp
-/home/ashley/CLionProjects/TecFlix/List.cpp
-Movie.h
-/home/ashley/CLionProjects/TecFlix/Movie.h
 
 /home/ashley/CLionProjects/TecFlix/Application.h
 QGraphicsScene
@@ -38,13 +24,21 @@ QObject
 QWidget
 -
 string
-/home/ashley/CLionProjects/TecFlix/string
+-
 iostream
 -
-
-/home/ashley/CLionProjects/TecFlix/List.cpp
+curl/curl.h
+-
+cstdio
+-
+cstring
+-
 List.h
 /home/ashley/CLionProjects/TecFlix/List.h
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
+Paginacion.h
+/home/ashley/CLionProjects/TecFlix/Paginacion.h
 
 /home/ashley/CLionProjects/TecFlix/List.h
 fstream
@@ -57,20 +51,28 @@ stdlib.h
 -
 Node.h
 /home/ashley/CLionProjects/TecFlix/Node.h
-Node.cpp
-/home/ashley/CLionProjects/TecFlix/Node.cpp
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
 
 /home/ashley/CLionProjects/TecFlix/Movie.h
 string
 /home/ashley/CLionProjects/TecFlix/string
-
-/home/ashley/CLionProjects/TecFlix/Node.cpp
-Node.h
-/home/ashley/CLionProjects/TecFlix/Node.h
+iostream
+-
 
 /home/ashley/CLionProjects/TecFlix/Node.h
 iostream
 -
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
+
+/home/ashley/CLionProjects/TecFlix/Paginacion.h
+List.h
+/home/ashley/CLionProjects/TecFlix/List.h
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
+List.h
+/home/ashley/CLionProjects/TecFlix/List.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 qobject.h

@@ -3,7 +3,8 @@
 //
 
 #include "Movie.h"
-using namespace std;
+
+
 
 void Movie::set_movie_title(string a){
     movie_title = a;
@@ -69,4 +70,11 @@ string Movie::get_country(){
 string Movie::get_movie_imdb_link(){
         return movie_imdb_link;
     }
+
+void Movie::Print(Movie movie) {
+    cout << "Titulo: " << this->movie_title << " Director: " << this->director_name  << " Actor principal: " << this->actor_1_name << " Actor Secuandario: " << this->actor_2_name << " Géneros: " << this->genres << "Año: " << this->title_year << " Lenguaje: " << this->language << " Pais: " << this->country << " Url: " << this->movie_imdb_link << endl;
+
+}
+
+Movie::Movie() {}
 

@@ -5,25 +5,25 @@
 #include "Node.h"
 
 // Constructor por defecto
-template<typename T>
 
-Node<T>::Node()
+
+Node::Node()
 {
-    data = NULL;
-    next = NULL;
+    data = Movie();
+    next = nullptr;
 }
 
 // Constructor por parámetro
-template<typename T>
-Node<T>::Node(T data_)
+
+Node::Node(Movie data_)
 {
     data = data_;
     next = NULL;
 }
 
 // Eliminar todos los Nodos
-template<typename T>
-void Node<T>::delete_all()
+
+void Node::delete_all()
 {
     if (next)
         next->delete_all();
@@ -31,12 +31,11 @@ void Node<T>::delete_all()
 }
 
 // Imprimir un Nodo
-template<typename T>
-void Node<T>::print()
+
+void Node::print(Movie movie)
 {
-    //cout << "Node-> " << "Dato: " << dato << " Direcion: " << this << " Siguiente: " << next << endl;
-    cout << data << "-> ";
+    movie.Print(movie);
 }
 
-template<typename T>
-Node<T>::~Node() {}
+
+Node::~Node() {}

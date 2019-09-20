@@ -124,6 +124,12 @@
 		<Unit filename="/home/ashley/CLionProjects/TecFlix/Node.h">
 			<Option target="TecFlix"/>
 		</Unit>
+		<Unit filename="/home/ashley/CLionProjects/TecFlix/Paginacion.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ashley/CLionProjects/TecFlix/Paginacion.h">
+			<Option target="TecFlix"/>
+		</Unit>
 		<Unit filename="/home/ashley/CLionProjects/TecFlix/Window.cpp">
 			<Option target="TecFlix"/>
 		</Unit>
