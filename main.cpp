@@ -2,7 +2,7 @@
 #include "Application.h"
 #include <QApplication>
 #include <QtWidgets/QGridLayout>
-#include "Window.h"
+
 
 using namespace std;
 
@@ -10,17 +10,13 @@ using namespace std;
 int main(int argc, char *argv[]) {
 
     QApplication w(argc, argv);
-    Window window;
-    window.resize(600, 650);
-    window.setWindowTitle("TecFlix");
-    window.show();
     Application a = Application();
-    a.Read(3);
+    a.Window();
+    a.resize(540, 650);
+    a.setWindowTitle("TecFlix");
+    a.show();
+    a.Read(1);
     return w.exec();
-
-
-
-
 
     }
 

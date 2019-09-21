@@ -9,7 +9,7 @@ find_package(Qt5Gui REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 
 
-add_executable(TecFlix main.cpp Application.cpp Application.h Node.cpp Node.h List.cpp List.h Movie.cpp Movie.h Window.cpp Window.h Paginacion.cpp Paginacion.h)
+add_executable(TecFlix main.cpp Application.cpp Application.h Node.cpp Node.h List.cpp List.h Movie.cpp Movie.h Paginacion.cpp Paginacion.h)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Core)
 target_link_libraries(${PROJECT_NAME} Qt5::Gui)

@@ -4,7 +4,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/TecFlix.dir/Node.cpp.o"
   "CMakeFiles/TecFlix.dir/List.cpp.o"
   "CMakeFiles/TecFlix.dir/Movie.cpp.o"
-  "CMakeFiles/TecFlix.dir/Window.cpp.o"
   "CMakeFiles/TecFlix.dir/Paginacion.cpp.o"
   "TecFlix.pdb"
   "TecFlix"

@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ashley/CLionProjects/TecFlix/Movie.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Movie.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/Node.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Node.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/Paginacion.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Paginacion.cpp.o"
-  "/home/ashley/CLionProjects/TecFlix/Window.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Window.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/main.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
