@@ -22,7 +22,7 @@
 #include <QFont>
 #include "List.h"
 #include "Movie.h"
-#include "Paginacion.h"
+
 
 using namespace std;
 
@@ -30,14 +30,35 @@ class Application : public QWidget{
 
 public:
 
+    List *prev = new List;
+    List *current = new List;
+    List *next = new List;
 
-    int *pagina = new int (1);
+    QPushButton *movie1;
+    QPushButton *movie2;
+    QPushButton *movie3;
+    QPushButton *movie4;
+    QPushButton *movie5;
+    QPushButton *movie6;
+    QPushButton *movie7;
+    QPushButton *movie8;
+    QPushButton *movie9;
+
+    QPushButton *sgt;
+    QPushButton *anterior;
+
+    int *page_ptr = new int (1);
+    int *counter = new int(10);
     void Window(QWidget *parent = 0);
     void Read(int n);
+    int Next_page();
+    int Previous_page();
     void gethtml(string url_imdb , int i);
     string getimage_url(string html, int i);
     void download_image(string url_image, int i);
-    void paginacion(List anterior, List actual , List siguiente);
+    void page_1();
+    void page();
+    void page_prev();
 
 };
 

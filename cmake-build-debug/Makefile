@@ -231,33 +231,6 @@ Node.cpp.s:
 	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
-Paginacion.o: Paginacion.cpp.o
-
-.PHONY : Paginacion.o
-
-# target to build an object file
-Paginacion.cpp.o:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Paginacion.cpp.o
-.PHONY : Paginacion.cpp.o
-
-Paginacion.i: Paginacion.cpp.i
-
-.PHONY : Paginacion.i
-
-# target to preprocess a source file
-Paginacion.cpp.i:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Paginacion.cpp.i
-.PHONY : Paginacion.cpp.i
-
-Paginacion.s: Paginacion.cpp.s
-
-.PHONY : Paginacion.s
-
-# target to generate assembly for a file
-Paginacion.cpp.s:
-	$(MAKE) -f CMakeFiles/TecFlix.dir/build.make CMakeFiles/TecFlix.dir/Paginacion.cpp.s
-.PHONY : Paginacion.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -306,9 +279,6 @@ help:
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
-	@echo "... Paginacion.o"
-	@echo "... Paginacion.i"
-	@echo "... Paginacion.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

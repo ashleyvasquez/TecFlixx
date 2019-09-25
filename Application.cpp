@@ -15,40 +15,42 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
 
 void Application::Window(QWidget *parent)  {
 
-    QPushButton* movie1 = new QPushButton("", this);
+    movie1 = new QPushButton("", this);
     movie1->setGeometry(40, 60, 100, 180);
 
-    QPushButton* movie2 = new QPushButton("", this);
+    movie2 = new QPushButton("", this);
     movie2->setGeometry(210, 60, 100, 180);
 
-    QPushButton* movie3 = new QPushButton("", this);
+    movie3 = new QPushButton("", this);
     movie3->setGeometry(380, 60, 100, 180);
 
-    QPushButton* movie4 = new QPushButton("", this);
+    movie4 = new QPushButton("", this);
     movie4->setGeometry(40, 260, 100, 180);
 
-    QPushButton* movie5 = new QPushButton("", this);
+    movie5 = new QPushButton("", this);
     movie5->setGeometry(210, 260, 100, 180);
 
-    QPushButton* movie6 = new QPushButton("", this);
+    movie6 = new QPushButton("", this);
     movie6->setGeometry(380, 260, 100, 180);
 
-    QPushButton* movie7 = new QPushButton("", this);
+    movie7 = new QPushButton("", this);
     movie7->setGeometry(40, 460, 100, 180);
 
-    QPushButton* movie8 = new QPushButton("", this);
+    movie8 = new QPushButton("", this);
     movie8->setGeometry(210, 460, 100, 180);
 
-    QPushButton* movie9= new QPushButton("", this);
+    movie9= new QPushButton("", this);
     movie9->setGeometry(380, 460, 100, 180);
 
-    QPushButton* siguiente = new QPushButton("Siguiente", this);
-    siguiente->setGeometry(415, 10, 100, 45);
+    sgt = new QPushButton("Siguiente", this);
+    sgt->setGeometry(415, 10, 100, 45);
+    connect(sgt, &QPushButton::clicked, this, &Application::Next_page);
 
-    QPushButton* anterior = new QPushButton("Anterior", this);
+    anterior = new QPushButton("Anterior", this);
     anterior->setGeometry(5, 10, 100, 45);
+    connect(anterior, &QPushButton::clicked, this, &Application::Previous_page);
 
-    for (int i=1; i<=9 ; i++) {
+    for (int i= 0; i<=9 ; i++) {
 
         string cont = to_string(i);
         string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
@@ -105,7 +107,7 @@ void Application::Window(QWidget *parent)  {
 
     }
 
-    //connect(btn, &QPushButton::clicked, this, &QWidget::close);
+
 
     QLabel* lbl = new QLabel(this);
     lbl->setGeometry(150, 10, 300, 30);
@@ -115,6 +117,137 @@ void Application::Window(QWidget *parent)  {
 
 
 
+int Application::Next_page(){
+   cout << "Listo" << endl;
+    for (int i = 1; i <= 9 ; i++) {
+
+        string cont = to_string(*counter);
+        string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
+        //cout << path << endl;
+        QPixmap pixi(path.c_str());
+        QPixmap pix = pixi.scaled(100, 180, Qt::IgnoreAspectRatio);
+        QIcon ButtonIcon(pix);
+        *counter += 1;
+
+        switch (i){
+            case 1:
+                movie1->setIcon(ButtonIcon);
+                movie1->setIconSize(movie1->rect().size());
+                break;
+
+            case 2:
+                movie2->setIcon(ButtonIcon);
+                movie2->setIconSize(movie1->rect().size());
+                break;
+
+            case 3:
+                movie3->setIcon(ButtonIcon);
+                movie3->setIconSize(movie1->rect().size());
+                break;
+            case 4:
+                movie4->setIcon(ButtonIcon);
+                movie4->setIconSize(movie1->rect().size());
+                break;
+
+            case 5:
+                movie5->setIcon(ButtonIcon);
+                movie5->setIconSize(movie1->rect().size());
+                break;
+
+            case 6:
+                movie6->setIcon(ButtonIcon);
+                movie6->setIconSize(movie1->rect().size());
+                break;
+            case 7:
+                movie7->setIcon(ButtonIcon);
+                movie7->setIconSize(movie1->rect().size());
+                break;
+
+            case 8:
+                movie8->setIcon(ButtonIcon);
+                movie8->setIconSize(movie1->rect().size());
+                break;
+
+            case 9:
+                movie9->setIcon(ButtonIcon);
+                movie9->setIconSize(movie1->rect().size());
+                break;
+        }
+
+    }
+    *page_ptr += 1;
+    //cout << *counter << endl;
+    //cout << *page_ptr << endl;
+    Read(*page_ptr);
+    return 0;
+}
+
+
+
+int Application::Previous_page(){
+    cout << "Listo" << endl;
+    for (int i = 1; i <= 9 ; i++) {
+
+        string cont = to_string(*counter);
+        string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
+        //cout << path << endl;
+        QPixmap pixi(path.c_str());
+        QPixmap pix = pixi.scaled(100, 180, Qt::IgnoreAspectRatio);
+        QIcon ButtonIcon(pix);
+        *counter -= 1;
+
+        switch (i){
+            case 1:
+                movie1->setIcon(ButtonIcon);
+                movie1->setIconSize(movie1->rect().size());
+                break;
+
+            case 2:
+                movie2->setIcon(ButtonIcon);
+                movie2->setIconSize(movie1->rect().size());
+                break;
+
+            case 3:
+                movie3->setIcon(ButtonIcon);
+                movie3->setIconSize(movie1->rect().size());
+                break;
+            case 4:
+                movie4->setIcon(ButtonIcon);
+                movie4->setIconSize(movie1->rect().size());
+                break;
+
+            case 5:
+                movie5->setIcon(ButtonIcon);
+                movie5->setIconSize(movie1->rect().size());
+                break;
+
+            case 6:
+                movie6->setIcon(ButtonIcon);
+                movie6->setIconSize(movie1->rect().size());
+                break;
+            case 7:
+                movie7->setIcon(ButtonIcon);
+                movie7->setIconSize(movie1->rect().size());
+                break;
+
+            case 8:
+                movie8->setIcon(ButtonIcon);
+                movie8->setIconSize(movie1->rect().size());
+                break;
+
+            case 9:
+                movie9->setIcon(ButtonIcon);
+                movie9->setIconSize(movie1->rect().size());
+                break;
+        }
+
+    }
+    *page_ptr -= 1;
+    cout << *counter << endl;
+    cout << *page_ptr << endl;
+    Read(-*page_ptr);
+    return 0;
+}
 
 
 void Application::gethtml(string url_imdb , int i) {
@@ -192,20 +325,40 @@ void Application::download_image(string url_image, int i){
 }
 
 
-void Application::paginacion(List anterior, List actual, List siguiente){
-
+void Application::page_1(){
 
     for (int i= 1; i <= 18; i++) {
         if (i<=9){
-            gethtml(actual.obt_pos(i).get_movie_imdb_link(), i);
-            i++;
+            gethtml(current->obt_pos(i).get_movie_imdb_link(), i);
         }else{
-            gethtml(siguiente.obt_pos(i-9).get_movie_imdb_link(), i);
+            gethtml(next->obt_pos(i-9).get_movie_imdb_link(), i);
         }
 
     }
+}
 
+void Application::page(){
 
+    int c = *counter;
+    for (int i = 1; i <= 9; i++) {
+        gethtml(next->obt_pos(i).get_movie_imdb_link(), c);
+        //cout << c << endl;
+        c++;
+    }
+
+}
+
+void Application::page_prev(){
+
+    cout << "el problema está aquí" << endl;
+    /**
+    int c = *counter;
+    for (int i = 1; i <= 9; i++) {
+        gethtml(prev->obt_pos(i).get_movie_imdb_link(), c);
+        //cout << c << endl;
+        c++;
+    }
+     */
 }
 
 
@@ -215,11 +368,6 @@ void Application::Read(int n) {
     ip.open("data2.csv");
 
     if (!ip.is_open()) std::cout << "ERROR: File Open" << "\n";
-
-    List actual;
-    List anterior;
-    List siguiente;
-
 
     string color;
     string director_name;
@@ -303,7 +451,7 @@ void Application::Read(int n) {
                     peli.set_country(country);
                     peli.set_movie_imdb_link(movie_imdb_link);
 
-                    anterior.add_end(peli);
+                    prev->add_end(peli);
 
                 } else {
                     if (i <= 9) {
@@ -348,7 +496,7 @@ void Application::Read(int n) {
                         peli.set_country(country);
                         peli.set_movie_imdb_link(movie_imdb_link);
 
-                        actual.add_end(peli);
+                        current->add_end(peli);
 
                     } else {
                         getline(ip, color, ',');
@@ -391,7 +539,7 @@ void Application::Read(int n) {
                         peli.set_country(country);
                         peli.set_movie_imdb_link(movie_imdb_link);
 
-                        siguiente.add_end(peli);
+                        next->add_end(peli);
 
 
                     }
@@ -399,8 +547,15 @@ void Application::Read(int n) {
             }
 
         }
-    }else{
-        if (n > 1){
+        page_1();
+        ip.close();
+    }
+
+    if (n > 1){
+        *prev = *current;
+        *current = *next;
+        next->del_all();
+
             for (int i = 0; i < 9 * n + 9; i++) {
 
                 if (i < 9 * n ) {
@@ -447,31 +602,72 @@ void Application::Read(int n) {
                             peli.set_country(country);
                             peli.set_movie_imdb_link(movie_imdb_link);
 
-                            siguiente.add_end(peli);
+                            next->add_end(peli);
                         }
                     }
+        page();
                 }
+    if (n<1){
+        *current = *prev;
+        *next = *current;
+        prev->del_all();
+
+        for (int i = 0; i < 9 * abs(n) - 9; i++) {
+
+            if (i < 9 * abs(n) - 18 ) {
+                getline(ip, line, '\n');
+
+            }  else {
+                getline(ip, color, ',');
+                getline(ip, director_name, ',');
+                getline(ip, num_critic_for_reviews, ',');
+                getline(ip, duration, ',');
+                getline(ip, director_facebook_likes, ',');
+                getline(ip, actor_3_facebook_likes, ',');
+                getline(ip, actor_2_name, ',');
+                getline(ip, actor_1_facebook_likes, ',');
+                getline(ip, gross, ',');
+                getline(ip, genres, ',');
+                getline(ip, actor_1_name, ',');
+                getline(ip, movie_title, ',');
+                getline(ip, num_voted_users, ',');
+                getline(ip, cast_total_facebook_likes, ',');
+                getline(ip, actor_3_name, ',');
+                getline(ip, facenumber_in_poster, ',');
+                getline(ip, plot_keywords, ',');
+                getline(ip, movie_imdb_link, ',');
+                getline(ip, num_user_for_reviews, ',');
+                getline(ip, language, ',');
+                getline(ip, country, ',');
+                getline(ip, content_rating, ',');
+                getline(ip, budget, ',');
+                getline(ip, title_year, ',');
+                getline(ip, actor_2_facebook_likes, ',');
+                getline(ip, imdb_score, ',');
+                getline(ip, aspect_ratio, ',');
+                getline(ip, movie_facebook_likes, '\n');
+
+                Movie peli = Movie();
+                peli.set_movie_title(movie_title);
+                peli.set_director_name(director_name);
+                peli.set_actor_1_name(actor_1_name);
+                peli.set_actor_2_name(actor_2_name);
+                peli.set_genres(genres);
+                peli.set_title_year(title_year);
+                peli.set_language(language);
+                peli.set_country(country);
+                peli.set_movie_imdb_link(movie_imdb_link);
+
+                prev->add_end(peli);
             }
-
-    paginacion(anterior, actual, siguiente);
-
-/**
-    cout << "Anterior" << endl;
-    anterior.print();
-
-    cout << "Actual" << endl;
-    actual.print();
-
-    cout << "Siguiente" << endl;
-    siguiente.print();
-*/
-
-
-    ip.close();
-
-
+        }
+        cout << "llamando a page_prev" << endl;
+        page_prev();
+    }
 
 }
+
+
 
 
 

@@ -47,8 +47,6 @@ List.h
 /home/ashley/CLionProjects/TecFlix/List.h
 Movie.h
 /home/ashley/CLionProjects/TecFlix/Movie.h
-Paginacion.h
-/home/ashley/CLionProjects/TecFlix/Paginacion.h
 
 /home/ashley/CLionProjects/TecFlix/List.h
 fstream
@@ -75,14 +73,6 @@ iostream
 -
 Movie.h
 /home/ashley/CLionProjects/TecFlix/Movie.h
-
-/home/ashley/CLionProjects/TecFlix/Paginacion.h
-List.h
-/home/ashley/CLionProjects/TecFlix/List.h
-Movie.h
-/home/ashley/CLionProjects/TecFlix/Movie.h
-List.h
-/home/ashley/CLionProjects/TecFlix/List.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 qobject.h
