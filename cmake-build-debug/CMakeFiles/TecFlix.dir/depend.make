@@ -290,6 +290,7 @@ CMakeFiles/TecFlix.dir/Node.cpp.o: ../Node.cpp
 CMakeFiles/TecFlix.dir/Node.cpp.o: ../Node.h
 
 CMakeFiles/TecFlix.dir/main.cpp.o: ../Application.h
+CMakeFiles/TecFlix.dir/main.cpp.o: ../Info.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../List.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../Node.h

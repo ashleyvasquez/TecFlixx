@@ -61,7 +61,19 @@ public:
     void page_1();
     void page();
     void page_prev();
-    int info_movie();
+    int info_movie1();
+    int info_movie2();
+    int info_movie3();
+    int info_movie4();
+    int info_movie5();
+    int info_movie6();
+    int info_movie7();
+    int info_movie8();
+    int info_movie9();
+
+
+
+
 
 };
 

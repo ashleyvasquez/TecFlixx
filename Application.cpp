@@ -5,6 +5,7 @@
 #include "Application.h"
 #include "Info.h"
 
+
 using namespace std;
 
 
@@ -14,35 +15,44 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
     return written;
 }
 
-void Application::Window(QWidget *parent)  {
+void Application::Window(QWidget *parent) {
 
     movie1 = new QPushButton("", this);
     movie1->setGeometry(40, 60, 100, 180);
-    connect(movie1, &QPushButton::clicked, this, &Application::info_movie);
+    connect(movie1, &QPushButton::clicked, this, &Application::info_movie1);
 
     movie2 = new QPushButton("", this);
     movie2->setGeometry(210, 60, 100, 180);
+    connect(movie2, &QPushButton::clicked, this, &Application::info_movie2);
 
     movie3 = new QPushButton("", this);
     movie3->setGeometry(380, 60, 100, 180);
+    connect(movie3, &QPushButton::clicked, this, &Application::info_movie3);
+
 
     movie4 = new QPushButton("", this);
     movie4->setGeometry(40, 260, 100, 180);
+    connect(movie4, &QPushButton::clicked, this, &Application::info_movie4);
 
     movie5 = new QPushButton("", this);
     movie5->setGeometry(210, 260, 100, 180);
+    connect(movie5, &QPushButton::clicked, this, &Application::info_movie5);
 
     movie6 = new QPushButton("", this);
     movie6->setGeometry(380, 260, 100, 180);
+    connect(movie6, &QPushButton::clicked, this, &Application::info_movie6);
 
     movie7 = new QPushButton("", this);
     movie7->setGeometry(40, 460, 100, 180);
+    connect(movie7, &QPushButton::clicked, this, &Application::info_movie7);
 
     movie8 = new QPushButton("", this);
     movie8->setGeometry(210, 460, 100, 180);
+    connect(movie8, &QPushButton::clicked, this, &Application::info_movie8);
 
     movie9= new QPushButton("", this);
     movie9->setGeometry(380, 460, 100, 180);
+    connect(movie9, &QPushButton::clicked, this, &Application::info_movie9);
 
     sgt = new QPushButton("Siguiente", this);
     sgt->setGeometry(415, 10, 100, 45);
@@ -117,10 +127,6 @@ void Application::Window(QWidget *parent)  {
     lbl->setText("¡Escoge tu película favorita!");
 }
 
-int Application::info_movie() {
-
-    return 0;
-}
 
 int Application::Next_page(){
    cout << "Pasando de página ->" << endl;
@@ -249,8 +255,6 @@ int Application::Previous_page(){
 
     }
     *page_ptr -= 1;
-    //cout << *counter << endl;
-    //cout << *page_ptr << endl;
     Read(-*page_ptr);
     return 0;
 }
@@ -356,11 +360,15 @@ void Application::page(){
 
 void Application::page_prev(){
     int c = *page_ptr*9-9;
-    for (int i = 1; i <= 9; i++) {
-        gethtml(prev->obt_pos(i).get_movie_imdb_link(), c);
-        c--;
-    }
+    //if (*page_ptr == 1){
+       // cout << "No se carga página previa" << endl;
+    //}else {
 
+        for (int i = 1; i <= 9; i++) {
+            gethtml(prev->obt_pos(i).get_movie_imdb_link(), c);
+            c--;
+        }
+   // }
 }
 
 
@@ -677,6 +685,53 @@ void Application::Read(int n) {
 
 }
 
+int Application::info_movie1() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+
+int Application::info_movie2() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+
+int Application::info_movie3() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+int Application::info_movie4() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+int Application::info_movie5() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+int Application::info_movie6() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+int Application::info_movie7() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+int Application::info_movie8() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
+int Application::info_movie9() {
+    cout << "Clicked" << endl;
+    Info info = new Info();
+    return 0;
+}
 
 
 

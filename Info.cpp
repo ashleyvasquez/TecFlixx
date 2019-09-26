@@ -4,7 +4,13 @@
 
 #include "Info.h"
 
-void Info::info(QWidget *parent)  {
+Info::Info(QWidget *parent) {
 
+    this->resize(400,400);
+    QLabel* lbl = new QLabel(this);
+    lbl->setGeometry(150, 10, 300, 30);
+    lbl->setFont(QFont("Segoe UI", 12));
+    lbl->setText("¡Info de la película!");
+    this->show();
 
 }

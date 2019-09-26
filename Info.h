@@ -17,11 +17,10 @@
 #include <QFont>
 #include <QtWidgets/QGridLayout>
 
-class Info {
-
+class Info: public QWidget {
 
 public:
-    void info(QWidget *parent = 0);
+    Info(QWidget *parent = 0);
 };
 
 
