@@ -3,6 +3,7 @@
 //
 
 #include "Application.h"
+#include "Info.h"
 
 using namespace std;
 
@@ -17,6 +18,7 @@ void Application::Window(QWidget *parent)  {
 
     movie1 = new QPushButton("", this);
     movie1->setGeometry(40, 60, 100, 180);
+    connect(movie1, &QPushButton::clicked, this, &Application::info_movie);
 
     movie2 = new QPushButton("", this);
     movie2->setGeometry(210, 60, 100, 180);
@@ -115,10 +117,13 @@ void Application::Window(QWidget *parent)  {
     lbl->setText("¡Escoge tu película favorita!");
 }
 
+int Application::info_movie() {
 
+    return 0;
+}
 
 int Application::Next_page(){
-   cout << "Listo" << endl;
+   cout << "Pasando de página ->" << endl;
     for (int i = 1; i <= 9 ; i++) {
 
         string cont = to_string(*counter);
@@ -185,7 +190,8 @@ int Application::Next_page(){
 
 
 int Application::Previous_page(){
-    cout << "Listo" << endl;
+    cout << "Pasando de página <-" << endl;
+    *counter -= 18;
     for (int i = 1; i <= 9 ; i++) {
 
         string cont = to_string(*counter);
@@ -194,7 +200,7 @@ int Application::Previous_page(){
         QPixmap pixi(path.c_str());
         QPixmap pix = pixi.scaled(100, 180, Qt::IgnoreAspectRatio);
         QIcon ButtonIcon(pix);
-        *counter -= 1;
+        *counter += 1;
 
         switch (i){
             case 1:
@@ -243,8 +249,8 @@ int Application::Previous_page(){
 
     }
     *page_ptr -= 1;
-    cout << *counter << endl;
-    cout << *page_ptr << endl;
+    //cout << *counter << endl;
+    //cout << *page_ptr << endl;
     Read(-*page_ptr);
     return 0;
 }
@@ -349,16 +355,12 @@ void Application::page(){
 }
 
 void Application::page_prev(){
-
-    cout << "el problema está aquí" << endl;
-    /**
-    int c = *counter;
+    int c = *page_ptr*9-9;
     for (int i = 1; i <= 9; i++) {
         gethtml(prev->obt_pos(i).get_movie_imdb_link(), c);
-        //cout << c << endl;
-        c++;
+        c--;
     }
-     */
+
 }
 
 
@@ -614,6 +616,15 @@ void Application::Read(int n) {
 
         for (int i = 0; i < 9 * abs(n) - 9; i++) {
 
+            if (abs(n) == 2) {
+                if (i == 0) {
+
+                    getline(ip, line, '\n');
+                }
+            }
+
+
+
             if (i < 9 * abs(n) - 18 ) {
                 getline(ip, line, '\n');
 
@@ -661,11 +672,12 @@ void Application::Read(int n) {
                 prev->add_end(peli);
             }
         }
-        cout << "llamando a page_prev" << endl;
         page_prev();
     }
 
 }
+
+
 
 
 

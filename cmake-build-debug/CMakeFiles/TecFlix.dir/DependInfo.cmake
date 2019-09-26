@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ashley/CLionProjects/TecFlix/Application.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Application.cpp.o"
+  "/home/ashley/CLionProjects/TecFlix/Info.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Info.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/List.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/List.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/Movie.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Movie.cpp.o"
   "/home/ashley/CLionProjects/TecFlix/Node.cpp" "/home/ashley/CLionProjects/TecFlix/cmake-build-debug/CMakeFiles/TecFlix.dir/Node.cpp.o"

@@ -106,6 +106,12 @@
 		<Unit filename="/home/ashley/CLionProjects/TecFlix/Application.h">
 			<Option target="TecFlix"/>
 		</Unit>
+		<Unit filename="/home/ashley/CLionProjects/TecFlix/Info.cpp">
+			<Option target="TecFlix"/>
+		</Unit>
+		<Unit filename="/home/ashley/CLionProjects/TecFlix/Info.h">
+			<Option target="TecFlix"/>
+		</Unit>
 		<Unit filename="/home/ashley/CLionProjects/TecFlix/List.cpp">
 			<Option target="TecFlix"/>
 		</Unit>

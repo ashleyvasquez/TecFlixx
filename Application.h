@@ -6,6 +6,7 @@
 #define TECFLIX_APPLICATION_H
 #include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QtWidgets/QGridLayout>
 #include <iostream>
 #include <fstream>
 #include <QObject>
@@ -49,6 +50,7 @@ public:
 
     int *page_ptr = new int (1);
     int *counter = new int(10);
+    int *counter2 = new int(1);
     void Window(QWidget *parent = 0);
     void Read(int n);
     int Next_page();
@@ -59,6 +61,7 @@ public:
     void page_1();
     void page();
     void page_prev();
+    int info_movie();
 
 };
 
