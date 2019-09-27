@@ -144,6 +144,7 @@ CMakeFiles/TecFlix.dir/Application.cpp.o
 CMakeFiles/TecFlix.dir/Info.cpp.o
  /home/ashley/CLionProjects/TecFlix/Info.cpp
  /home/ashley/CLionProjects/TecFlix/Info.h
+ /home/ashley/CLionProjects/TecFlix/Movie.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h

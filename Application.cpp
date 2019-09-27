@@ -277,8 +277,9 @@ int Application::Previous_page(){
         cout << *counter << endl;
         cout << *page_ptr << endl;
         Read(-*page_ptr);
-        return 0;
+
     }
+    return 0;
 }
 
 
@@ -727,51 +728,50 @@ void Application::Read(int n) {
 }
 
 int Application::info_movie1() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
-
+    Info *info = new Info();
+    info->info_object(current->obt_pos(1));
     return 0;
 }
 
 int Application::info_movie2() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(2));
     return 0;
 }
 
 int Application::info_movie3() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(3));
     return 0;
 }
 int Application::info_movie4() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(4));
     return 0;
 }
 int Application::info_movie5() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(5));
     return 0;
 }
 int Application::info_movie6() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(6));
     return 0;
 }
 int Application::info_movie7() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(7));
     return 0;
 }
 int Application::info_movie8() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(8));
     return 0;
 }
 int Application::info_movie9() {
-    cout << "Clicked" << endl;
-    Info info = new Info();
+    Info *info = new Info();
+    info->info_object(current->obt_pos(9));
     return 0;
 }
 

@@ -143,6 +143,7 @@ CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWi
 
 CMakeFiles/TecFlix.dir/Info.cpp.o: ../Info.cpp
 CMakeFiles/TecFlix.dir/Info.cpp.o: ../Info.h
+CMakeFiles/TecFlix.dir/Info.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
