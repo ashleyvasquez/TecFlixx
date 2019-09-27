@@ -18,48 +18,48 @@ size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
 void Application::Window(QWidget *parent) {
 
     movie1 = new QPushButton("", this);
-    movie1->setGeometry(40, 60, 100, 180);
+    movie1->setGeometry(40, 50, 120, 190);
     connect(movie1, &QPushButton::clicked, this, &Application::info_movie1);
 
     movie2 = new QPushButton("", this);
-    movie2->setGeometry(210, 60, 100, 180);
+    movie2->setGeometry(210, 50, 120, 190);
     connect(movie2, &QPushButton::clicked, this, &Application::info_movie2);
 
     movie3 = new QPushButton("", this);
-    movie3->setGeometry(380, 60, 100, 180);
+    movie3->setGeometry(380, 50, 120, 190);
     connect(movie3, &QPushButton::clicked, this, &Application::info_movie3);
 
 
     movie4 = new QPushButton("", this);
-    movie4->setGeometry(40, 260, 100, 180);
+    movie4->setGeometry(40, 250, 120, 190);
     connect(movie4, &QPushButton::clicked, this, &Application::info_movie4);
 
     movie5 = new QPushButton("", this);
-    movie5->setGeometry(210, 260, 100, 180);
+    movie5->setGeometry(210, 250, 120, 190);
     connect(movie5, &QPushButton::clicked, this, &Application::info_movie5);
 
     movie6 = new QPushButton("", this);
-    movie6->setGeometry(380, 260, 100, 180);
+    movie6->setGeometry(380, 250, 120, 190);
     connect(movie6, &QPushButton::clicked, this, &Application::info_movie6);
 
     movie7 = new QPushButton("", this);
-    movie7->setGeometry(40, 460, 100, 180);
+    movie7->setGeometry(40, 450, 120, 190);
     connect(movie7, &QPushButton::clicked, this, &Application::info_movie7);
 
     movie8 = new QPushButton("", this);
-    movie8->setGeometry(210, 460, 100, 180);
+    movie8->setGeometry(210, 450, 120, 190);
     connect(movie8, &QPushButton::clicked, this, &Application::info_movie8);
 
     movie9= new QPushButton("", this);
-    movie9->setGeometry(380, 460, 100, 180);
+    movie9->setGeometry(380, 450, 120, 190);
     connect(movie9, &QPushButton::clicked, this, &Application::info_movie9);
 
     sgt = new QPushButton("Siguiente", this);
-    sgt->setGeometry(415, 10, 100, 45);
+    sgt->setGeometry(435, 0, 100, 45);
     connect(sgt, &QPushButton::clicked, this, &Application::Next_page);
 
     anterior = new QPushButton("Anterior", this);
-    anterior->setGeometry(5, 10, 100, 45);
+    anterior->setGeometry(5, 0, 100, 45);
     connect(anterior, &QPushButton::clicked, this, &Application::Previous_page);
 
     for (int i= 0; i<=9 ; i++) {
@@ -68,8 +68,9 @@ void Application::Window(QWidget *parent) {
         string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
         //cout << path << endl;
         QPixmap pixi(path.c_str());
-        QPixmap pix = pixi.scaled(100, 180, Qt::IgnoreAspectRatio);
+        QPixmap pix = pixi.scaled(120, 190, Qt::IgnoreAspectRatio);
         QIcon ButtonIcon(pix);
+
 
         switch (i){
             case 1:
@@ -115,9 +116,8 @@ void Application::Window(QWidget *parent) {
                 movie9->setIconSize(movie1->rect().size());
                 break;
         }
-
-
     }
+
 
 
 
@@ -136,8 +136,16 @@ int Application::Next_page(){
         string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
         //cout << path << endl;
         QPixmap pixi(path.c_str());
-        QPixmap pix = pixi.scaled(100, 180, Qt::IgnoreAspectRatio);
+        QPixmap pix = pixi.scaled(120, 190, Qt::IgnoreAspectRatio);
         QIcon ButtonIcon(pix);
+
+
+        string c = to_string(*counter - 18);
+        string path2 = "/home/ashley/CLionProjects/TecFlix/poster" + c + ".jpg";
+        int n = path2.length();
+        char ruta[n + 1];
+        strcpy(ruta, path2.c_str());
+        remove(ruta);
         *counter += 1;
 
         switch (i){
@@ -196,67 +204,81 @@ int Application::Next_page(){
 
 
 int Application::Previous_page(){
-    cout << "Pasando de página <-" << endl;
-    *counter -= 18;
-    for (int i = 1; i <= 9 ; i++) {
+    if (*page_ptr == 1){
+        cout <<"Ya está en la primera página" << endl;
 
-        string cont = to_string(*counter);
-        string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
-        //cout << path << endl;
-        QPixmap pixi(path.c_str());
-        QPixmap pix = pixi.scaled(100, 180, Qt::IgnoreAspectRatio);
-        QIcon ButtonIcon(pix);
-        *counter += 1;
+    }else {
+        cout << "Pasando de página <-" << endl;
+        *counter -= 18;
+        for (int i = 1; i <= 9; i++) {
 
-        switch (i){
-            case 1:
-                movie1->setIcon(ButtonIcon);
-                movie1->setIconSize(movie1->rect().size());
-                break;
+            string cont = to_string(*counter);
+            string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
+            //cout << path << endl;
+            QPixmap pixi(path.c_str());
+            QPixmap pix = pixi.scaled(120, 190, Qt::IgnoreAspectRatio);
+            QIcon ButtonIcon(pix);
 
-            case 2:
-                movie2->setIcon(ButtonIcon);
-                movie2->setIconSize(movie1->rect().size());
-                break;
+            string c = to_string(*counter + 18);
+            string path2 = "/home/ashley/CLionProjects/TecFlix/poster" + c + ".jpg";
+            int n = path2.length();
+            char ruta[n + 1];
+            strcpy(ruta, path2.c_str());
+            remove(ruta);
+            *counter += 1;
 
-            case 3:
-                movie3->setIcon(ButtonIcon);
-                movie3->setIconSize(movie1->rect().size());
-                break;
-            case 4:
-                movie4->setIcon(ButtonIcon);
-                movie4->setIconSize(movie1->rect().size());
-                break;
+            switch (i) {
+                case 1:
+                    movie1->setIcon(ButtonIcon);
+                    movie1->setIconSize(movie1->rect().size());
+                    break;
 
-            case 5:
-                movie5->setIcon(ButtonIcon);
-                movie5->setIconSize(movie1->rect().size());
-                break;
+                case 2:
+                    movie2->setIcon(ButtonIcon);
+                    movie2->setIconSize(movie1->rect().size());
+                    break;
 
-            case 6:
-                movie6->setIcon(ButtonIcon);
-                movie6->setIconSize(movie1->rect().size());
-                break;
-            case 7:
-                movie7->setIcon(ButtonIcon);
-                movie7->setIconSize(movie1->rect().size());
-                break;
+                case 3:
+                    movie3->setIcon(ButtonIcon);
+                    movie3->setIconSize(movie1->rect().size());
+                    break;
+                case 4:
+                    movie4->setIcon(ButtonIcon);
+                    movie4->setIconSize(movie1->rect().size());
+                    break;
 
-            case 8:
-                movie8->setIcon(ButtonIcon);
-                movie8->setIconSize(movie1->rect().size());
-                break;
+                case 5:
+                    movie5->setIcon(ButtonIcon);
+                    movie5->setIconSize(movie1->rect().size());
+                    break;
 
-            case 9:
-                movie9->setIcon(ButtonIcon);
-                movie9->setIconSize(movie1->rect().size());
-                break;
+                case 6:
+                    movie6->setIcon(ButtonIcon);
+                    movie6->setIconSize(movie1->rect().size());
+                    break;
+                case 7:
+                    movie7->setIcon(ButtonIcon);
+                    movie7->setIconSize(movie1->rect().size());
+                    break;
+
+                case 8:
+                    movie8->setIcon(ButtonIcon);
+                    movie8->setIconSize(movie1->rect().size());
+                    break;
+
+                case 9:
+                    movie9->setIcon(ButtonIcon);
+                    movie9->setIconSize(movie1->rect().size());
+                    break;
+            }
+
         }
-
+        *page_ptr -= 1;
+        cout << *counter << endl;
+        cout << *page_ptr << endl;
+        Read(-*page_ptr);
+        return 0;
     }
-    *page_ptr -= 1;
-    Read(-*page_ptr);
-    return 0;
 }
 
 
@@ -315,7 +337,6 @@ void Application::download_image(string url_image, int i){
     string cont = to_string(i);
     string path = "/home/ashley/CLionProjects/TecFlix/poster" + cont + ".jpg";
 
-
     curl = curl_easy_init();
     int n = url_image.length();
     char url[n + 1];
@@ -348,7 +369,6 @@ void Application::page_1(){
 }
 
 void Application::page(){
-
     int c = *counter;
     for (int i = 1; i <= 9; i++) {
         gethtml(next->obt_pos(i).get_movie_imdb_link(), c);
@@ -359,16 +379,18 @@ void Application::page(){
 }
 
 void Application::page_prev(){
-    int c = *page_ptr*9-9;
-    //if (*page_ptr == 1){
-       // cout << "No se carga página previa" << endl;
-    //}else {
 
+    if (*page_ptr == 1){
+        cout << "No se carga página previa" << endl;
+
+
+    }else {
+        int c = *page_ptr*9-17;
         for (int i = 1; i <= 9; i++) {
             gethtml(prev->obt_pos(i).get_movie_imdb_link(), c);
-            c--;
+            c++;
         }
-   // }
+    }
 }
 
 
@@ -559,11 +581,21 @@ void Application::Read(int n) {
         }
         page_1();
         ip.close();
+        //prev->print();
+        //current->print();
+        //next->print();
+
     }
 
     if (n > 1){
-        *prev = *current;
-        *current = *next;
+
+        for (int i = 1; i<=9; i++){
+            prev->add_end(current->obt_pos(i)) ;
+        }
+        current->del_all();
+        for (int i = 1; i<=9; i++){
+            current->add_end(next->obt_pos(i)) ;
+        }
         next->del_all();
 
             for (int i = 0; i < 9 * n + 9; i++) {
@@ -615,12 +647,21 @@ void Application::Read(int n) {
                             next->add_end(peli);
                         }
                     }
+        //cout << "Llamando a page" << endl;
         page();
                 }
-    if (n<1){
-        *current = *prev;
-        *next = *current;
+    if ( n < 1){
+
+        next->del_all();
+        for (int i = 1; i<=9; i++){
+            next->add_end(current->obt_pos(i)) ;
+        }
+        current->del_all();
+        for (int i = 1; i<=9; i++){
+            current->add_end(prev->obt_pos(i)) ;
+        }
         prev->del_all();
+
 
         for (int i = 0; i < 9 * abs(n) - 9; i++) {
 
@@ -631,10 +672,9 @@ void Application::Read(int n) {
                 }
             }
 
-
-
             if (i < 9 * abs(n) - 18 ) {
                 getline(ip, line, '\n');
+
 
             }  else {
                 getline(ip, color, ',');
@@ -680,6 +720,7 @@ void Application::Read(int n) {
                 prev->add_end(peli);
             }
         }
+        //cout << "Llamando a página previa" << endl;
         page_prev();
     }
 
@@ -688,6 +729,7 @@ void Application::Read(int n) {
 int Application::info_movie1() {
     cout << "Clicked" << endl;
     Info info = new Info();
+
     return 0;
 }
 
