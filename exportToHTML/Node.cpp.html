@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Node.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Node.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by ashley on 3/9/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;Node.h&quot;</span>
+
+<span class="s0">// Constructor por defecto</span>
+
+
+<span class="s1">Node::Node()</span>
+<span class="s1">{</span>
+    <span class="s1">data = Movie()</span><span class="s4">;</span>
+    <span class="s1">next = </span><span class="s4">nullptr;</span>
+<span class="s1">}</span>
+
+<span class="s0">// Constructor por parámetro</span>
+
+<span class="s1">Node::Node(Movie data_)</span>
+<span class="s1">{</span>
+    <span class="s1">data = data_</span><span class="s4">;</span>
+    <span class="s1">next = NULL</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s0">// Eliminar todos los Nodos</span>
+
+<span class="s4">void </span><span class="s1">Node::delete_all()</span>
+<span class="s1">{</span>
+    <span class="s4">if </span><span class="s1">(next)</span>
+        <span class="s1">next-&gt;delete_all()</span><span class="s4">;</span>
+    <span class="s4">delete this;</span>
+<span class="s1">}</span>
+
+<span class="s0">// Imprimir un Nodo</span>
+
+<span class="s4">void </span><span class="s1">Node::print(Movie movie)</span>
+<span class="s1">{</span>
+    <span class="s1">movie.Print(movie)</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+
+<span class="s1">Node::~Node() {}</span>
+</pre>
+</body>
+</html>

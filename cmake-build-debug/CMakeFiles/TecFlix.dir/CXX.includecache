@@ -6,6 +6,52 @@
 
 #IncludeRegexTransform: 
 
+/home/ashley/CLionProjects/TecFlix/Application.cpp
+Application.h
+/home/ashley/CLionProjects/TecFlix/Application.h
+Info.h
+/home/ashley/CLionProjects/TecFlix/Info.h
+
+/home/ashley/CLionProjects/TecFlix/Application.h
+QGraphicsScene
+-
+QGraphicsView
+-
+QtWidgets/QGridLayout
+-
+iostream
+-
+fstream
+-
+QObject
+-
+QWidget
+-
+string
+-
+iostream
+-
+curl/curl.h
+-
+cstdio
+-
+cstring
+-
+QApplication
+-
+QWidget
+-
+QPushButton
+-
+QLabel
+-
+QFont
+-
+List.h
+/home/ashley/CLionProjects/TecFlix/List.h
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
+
 /home/ashley/CLionProjects/TecFlix/Info.cpp
 Info.h
 /home/ashley/CLionProjects/TecFlix/Info.h
@@ -35,6 +81,24 @@ QFont
 -
 QtWidgets/QGridLayout
 -
+QtGui/QDesktopServices
+-
+QUrl
+/home/ashley/CLionProjects/TecFlix/QUrl
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
+
+/home/ashley/CLionProjects/TecFlix/List.h
+fstream
+-
+iostream
+-
+string
+-
+stdlib.h
+-
+Node.h
+/home/ashley/CLionProjects/TecFlix/Node.h
 Movie.h
 /home/ashley/CLionProjects/TecFlix/Movie.h
 
@@ -44,9 +108,29 @@ string
 iostream
 -
 
+/home/ashley/CLionProjects/TecFlix/Node.h
+iostream
+-
+Movie.h
+/home/ashley/CLionProjects/TecFlix/Movie.h
+
+/home/ashley/CLionProjects/TecFlix/main.cpp
+Application.h
+/home/ashley/CLionProjects/TecFlix/Application.h
+Info.h
+/home/ashley/CLionProjects/TecFlix/Info.h
+QApplication
+-
+QtWidgets/QGridLayout
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 qobject.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
+qurl.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 QtCore/qglobal.h
@@ -548,6 +632,12 @@ QtCore/qhashfunctions.h
 QtCore/qnamespace.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
+QtCore/qstringlist.h
+-
+QtCore/qobjectdefs.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
 QtCore/qchar.h
 -
@@ -752,6 +842,10 @@ QtCore/qpoint.h
 QtCore/qglobal.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/QDesktopServices
+qdesktopservices.h
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont
 qfont.h
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
@@ -796,6 +890,14 @@ QtGui/qtguiglobal.h
 QtCore/qpoint.h
 -
 QtGui/qwindowdefs.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
+QtGui/qtguiglobal.h
+-
+QtCore/qstring.h
+-
+QtCore/qstandardpaths.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h

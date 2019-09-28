@@ -16,8 +16,14 @@
 #include <QLabel>
 #include <QFont>
 #include <QtWidgets/QGridLayout>
+#include <QtGui/QDesktopServices>
+#include "QUrl"
 #include "Movie.h"
 
+/**
+ * @brief la clase Info crea las ventanas con la informacion de la pelicula
+ * @param parent
+ */
 class Info: public QWidget {
 
 public:
@@ -30,7 +36,15 @@ public:
     QLabel *language;
     QLabel *country;
 
+    /**
+     * Es el contructor de la clase, crea todos los labels
+     * @param parent
+     */
     Info(QWidget *parent = 0);
+    /**
+     * obtiene la información de las películas
+     * @param peli
+     */
     void info_object(Movie peli);
 };
 

@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>List.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+List.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by ashley on 3/9/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#include </span><span class="s3">&quot;List.h&quot;</span>
+
+
+<span class="s4">using namespace </span><span class="s1">std</span><span class="s4">;</span>
+
+<span class="s0">// Constructor por defecto</span>
+
+<span class="s1">List::List()</span>
+<span class="s1">{</span>
+    <span class="s1">m_num_nodes = </span><span class="s5">0</span><span class="s4">;</span>
+    <span class="s1">m_head = NULL</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s0">// Insertar al inicio</span>
+
+<span class="s4">void </span><span class="s1">List::add_head(Movie data_)</span>
+<span class="s1">{</span>
+    <span class="s1">Node *new_node = </span><span class="s4">new </span><span class="s1">Node (data_)</span><span class="s4">;</span>
+    <span class="s1">Node *temp = m_head</span><span class="s4">;</span>
+
+    <span class="s4">if </span><span class="s1">(!m_head) {</span>
+        <span class="s1">m_head = new_node</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s1">new_node-&gt;next = m_head</span><span class="s4">;</span>
+        <span class="s1">m_head = new_node</span><span class="s4">;</span>
+
+        <span class="s4">while </span><span class="s1">(temp) {</span>
+            <span class="s1">temp = temp-&gt;next</span><span class="s4">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s1">m_num_nodes++</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s0">// Eliminar todos los nodos</span>
+
+<span class="s4">void </span><span class="s1">List::del_all()</span>
+<span class="s1">{</span>
+    <span class="s1">m_head-&gt;delete_all()</span><span class="s4">;</span>
+    <span class="s1">m_head = </span><span class="s5">0</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+<span class="s0">// Eliminar al inicio</span>
+
+<span class="s4">void </span><span class="s1">List::del()</span>
+<span class="s1">{</span>
+    <span class="s1">Node *temp = m_head</span><span class="s4">;</span>
+    <span class="s1">Node *temp1 = temp-&gt;next</span><span class="s4">;</span>
+
+    <span class="s1">m_head = temp-&gt;next</span><span class="s4">;</span>
+
+<span class="s1">}</span>
+
+<span class="s0">//Edita por posición</span>
+
+<span class="s4">void </span><span class="s1">List::edit_pos(</span><span class="s4">int </span><span class="s1">pos</span><span class="s4">, </span><span class="s1">Movie data_) {</span>
+
+    <span class="s1">Node *aux</span><span class="s4">;</span>
+    <span class="s1">Node *new_node = </span><span class="s4">new </span><span class="s1">Node (data_)</span><span class="s4">;</span>
+    <span class="s4">int </span><span class="s1">i=</span><span class="s5">1</span><span class="s4">;</span>
+    <span class="s1">aux = m_head</span><span class="s4">;</span>
+    <span class="s4">while</span><span class="s1">(i!=pos){</span>
+        <span class="s1">aux=aux-&gt;next</span><span class="s4">;</span>
+        <span class="s1">i++</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s1">aux-&gt;data = new_node-&gt;data</span><span class="s4">;</span>
+
+
+<span class="s1">}</span>
+
+<span class="s0">// Obtener por posición del nodo</span>
+
+<span class="s1">Movie List::obt_pos(</span><span class="s4">int </span><span class="s1">pos)</span>
+<span class="s1">{</span>
+    <span class="s1">Node *aux</span><span class="s4">;</span>
+    <span class="s4">int </span><span class="s1">i = </span><span class="s5">1</span><span class="s4">;</span>
+    <span class="s1">aux = m_head</span><span class="s4">;</span>
+    <span class="s4">while</span><span class="s1">(i!=pos){</span>
+        <span class="s1">aux = aux-&gt;next</span><span class="s4">;</span>
+        <span class="s1">i++</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s4">return </span><span class="s1">aux-&gt;data</span><span class="s4">;</span>
+
+<span class="s1">}</span>
+
+<span class="s0">// Insertar al final</span>
+<span class="s4">void </span><span class="s1">List::add_end(Movie data_)</span>
+<span class="s1">{</span>
+    <span class="s1">Node *new_node = </span><span class="s4">new </span><span class="s1">Node (data_)</span><span class="s4">;</span>
+    <span class="s1">Node *temp = m_head</span><span class="s4">;</span>
+
+    <span class="s4">if </span><span class="s1">(!m_head) {</span>
+        <span class="s1">m_head = new_node</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s4">while </span><span class="s1">(temp-&gt;next != NULL) {</span>
+            <span class="s1">temp = temp-&gt;next</span><span class="s4">;</span>
+        <span class="s1">}</span>
+        <span class="s1">temp-&gt;next = new_node</span><span class="s4">;</span>
+    <span class="s1">}</span>
+    <span class="s1">m_num_nodes++</span><span class="s4">;</span>
+<span class="s1">}</span>
+
+
+
+<span class="s0">// Imprimir la Lista</span>
+
+<span class="s4">void </span><span class="s1">List::print()</span>
+<span class="s1">{</span>
+    <span class="s1">Node *temp = m_head</span><span class="s4">;</span>
+    <span class="s4">if </span><span class="s1">(!m_head) {</span>
+        <span class="s1">cout &lt;&lt; </span><span class="s3">&quot;La Lista está vacía &quot; </span><span class="s1">&lt;&lt; endl</span><span class="s4">;</span>
+    <span class="s1">} </span><span class="s4">else </span><span class="s1">{</span>
+        <span class="s4">while </span><span class="s1">(temp) {</span>
+            <span class="s1">temp-&gt;print(temp-&gt;data)</span><span class="s4">;</span>
+            <span class="s4">if </span><span class="s1">(!temp-&gt;next) cout &lt;&lt; </span><span class="s3">&quot;NULL&quot;</span><span class="s4">;</span>
+            <span class="s1">temp = temp-&gt;next</span><span class="s4">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s1">List::~List() {}</span></pre>
+</body>
+</html>

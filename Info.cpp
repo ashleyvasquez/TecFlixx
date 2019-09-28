@@ -2,11 +2,13 @@
 // Created by ashley on 26/9/19.
 //
 
+
 #include "Info.h"
 
 
 Info::Info(QWidget *parent) {
     this->resize(600,500);
+
 
     QLabel* lbl2 = new QLabel(this);
     lbl2->setGeometry(50, 105, 300, 30);
@@ -77,6 +79,7 @@ Info::Info(QWidget *parent) {
     this->show();
 
 }
+
 
 void Info::info_object(Movie peli) {
 

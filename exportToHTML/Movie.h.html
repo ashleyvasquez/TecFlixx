@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Movie.h</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Movie.h</font>
+</center></td></tr></table>
+<pre><span class="s0">//</span>
+<span class="s0">// Created by ashley on 16/9/19.</span>
+<span class="s0">//</span>
+
+<span class="s2">#ifndef </span><span class="s1">TECFLIX_MOVIE_H</span>
+<span class="s2">#define </span><span class="s1">TECFLIX_MOVIE_H</span>
+<span class="s2">#include </span><span class="s3">&quot;string&quot;</span>
+<span class="s2">#include </span><span class="s3">&lt;iostream&gt;</span>
+
+<span class="s4">using namespace </span><span class="s1">std</span><span class="s4">;</span>
+
+<span class="s0">/** 
+ * @brief la Clase Movie crea objetos con cada película 
+ */</span>
+<span class="s4">class </span><span class="s1">Movie {</span>
+    <span class="s1">string movie_title</span><span class="s4">;</span>
+    <span class="s1">string director_name</span><span class="s4">;</span>
+    <span class="s1">string actor_1_name</span><span class="s4">;</span>
+    <span class="s1">string actor_2_name</span><span class="s4">;</span>
+    <span class="s1">string genres</span><span class="s4">;</span>
+    <span class="s1">string title_year</span><span class="s4">;</span>
+    <span class="s1">string language</span><span class="s4">;</span>
+    <span class="s1">string country</span><span class="s4">;</span>
+    <span class="s1">string movie_imdb_link</span><span class="s4">;</span>
+    <span class="s1">string url_trailer</span><span class="s4">;</span>
+
+<span class="s4">public</span><span class="s1">:</span>
+    <span class="s0">/** 
+     * set_movie_title ingresa el título de la película 
+     * @param a es el título 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_movie_title(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_director_name ingresa el director de la película 
+     * @param a es el director 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_director_name(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_actor_1_name ingresa el nombre del actor principal de la película 
+     * @param a es el actor principal 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_actor_1_name(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_actor_2_name ingresa el nombre del actor secundario de la película 
+     * @param a es el actor secundario 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_actor_2_name(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_genres ingresa el género de la película 
+     * @param a es el genero 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_genres(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_title_year ingresa el año de la película 
+     * @param a es el año 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_title_year(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_language ingresa el lenguaje de la película 
+     * @param a es el lenguaje 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_language(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_country ingresa el país de la película 
+     * @param a es el país 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_country(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_movie_imdb_link ingresa el link de la película 
+     * @param a es el link 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_movie_imdb_link(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * set_movie_imdb_link ingresa el link del trailer 
+     * @param a es el link 
+     */</span>
+    <span class="s4">void </span><span class="s1">set_url_trailer(string a)</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * Print imprime el objeto 
+     * @param movie 
+     */</span>
+    <span class="s4">void </span><span class="s1">Print(Movie movie)</span><span class="s4">;</span>
+    <span class="s1">Movie()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retirna el link del trailer 
+     * @return 
+     */</span>
+    <span class="s1">string get_url_trailer()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el título de la película 
+     * @return 
+     */</span>
+    <span class="s1">string get_movie_title()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el nombre del director de la película 
+     * @return 
+     */</span>
+    <span class="s1">string get_director_name()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el nombre del actor principal 
+     * @return 
+     */</span>
+    <span class="s1">string get_actor_1_name()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el nombre del actor secundario 
+     * @return 
+     */</span>
+    <span class="s1">string get_actor_2_name()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna los generos de la película 
+     * @return 
+     */</span>
+    <span class="s1">string get_genres()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el año de la película 
+     * @return 
+     */</span>
+    <span class="s1">string get_title_year()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el lenguaje de la pelicula 
+     * @return 
+     */</span>
+    <span class="s1">string get_language()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el país de la pelicula 
+     * @return 
+     */</span>
+    <span class="s1">string get_country()</span><span class="s4">;</span>
+    <span class="s0">/** 
+     * retorna el link de la página 
+     * @return 
+     */</span>
+    <span class="s1">string get_movie_imdb_link()</span><span class="s4">;</span>
+
+
+<span class="s1">}</span><span class="s4">;</span>
+
+
+<span class="s2">#endif </span><span class="s0">//TECFLIX_MOVIE_H</span>
+</pre>
+</body>
+</html>

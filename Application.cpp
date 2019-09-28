@@ -274,8 +274,8 @@ int Application::Previous_page(){
 
         }
         *page_ptr -= 1;
-        cout << *counter << endl;
-        cout << *page_ptr << endl;
+        //cout << *counter << endl;
+        //cout << *page_ptr << endl;
         Read(-*page_ptr);
 
     }
@@ -312,6 +312,7 @@ void Application::gethtml(string url_imdb , int i) {
         fclose(fp);
         std::string content(buffer);
         getimage_url(buffer, i );
+        //cout << buffer << endl;
         delete [] buffer;
 
     }
@@ -326,8 +327,18 @@ string Application::getimage_url(string html, int i) {
     url= urltemp.substr(0, urltemp.find(".jpg",0)+4);
     //cout << "url de la imagen " << url << endl;
     download_image(url, i);
+    getvideo_url(url,i);
     return url;
 
+}
+
+string Application::getvideo_url(string html,int i){
+    string urltemp;
+    string url;
+    urltemp = html.substr(html.find("<a href=\"/video" , 0)+9);
+    url= urltemp.substr(0, urltemp.find("\"",0));
+    url = "https://www.imdb.com" + url;
+    return url;
 }
 
 void Application::download_image(string url_image, int i){
@@ -730,8 +741,10 @@ void Application::Read(int n) {
 int Application::info_movie1() {
     Info *info = new Info();
     info->info_object(current->obt_pos(1));
+
     return 0;
 }
+
 
 int Application::info_movie2() {
     Info *info = new Info();

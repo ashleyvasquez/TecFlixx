@@ -18,8 +18,14 @@ public:
 
     Node *next;
     Movie data;
-
+    /**
+     * elimina todos los nodos
+     */
     void delete_all();
+    /**
+     * retorna el nodo
+     * @param m
+     */
     void print(Movie m);
 };
 

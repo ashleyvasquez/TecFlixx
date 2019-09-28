@@ -43,6 +43,15 @@ void Movie::set_movie_imdb_link(string a){
     movie_imdb_link = a;
 }
 
+void Movie::set_url_trailer(string a){
+    url_trailer = a;
+}
+
+string Movie::get_url_trailer(){
+    return url_trailer;
+
+}
+
 string Movie::get_movie_title() {
     return movie_title;
 }

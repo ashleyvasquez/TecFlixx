@@ -8,6 +8,7 @@ CMakeFiles/TecFlix.dir/Application.cpp.o: ../List.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: ../Node.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -64,6 +65,7 @@ CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCo
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
@@ -82,10 +84,12 @@ CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCo
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QDesktopServices
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
 CMakeFiles/TecFlix.dir/Application.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
@@ -145,6 +149,7 @@ CMakeFiles/TecFlix.dir/Info.cpp.o: ../Info.cpp
 CMakeFiles/TecFlix.dir/Info.cpp.o: ../Info.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -201,6 +206,7 @@ CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsha
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
@@ -219,10 +225,12 @@ CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvar
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QDesktopServices
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
 CMakeFiles/TecFlix.dir/Info.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
@@ -297,6 +305,7 @@ CMakeFiles/TecFlix.dir/main.cpp.o: ../Movie.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../Node.h
 CMakeFiles/TecFlix.dir/main.cpp.o: ../main.cpp
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -353,6 +362,7 @@ CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsha
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsize.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstandardpaths.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
@@ -371,10 +381,12 @@ CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvar
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QDesktopServices
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QFont
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qdesktopservices.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
 CMakeFiles/TecFlix.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
